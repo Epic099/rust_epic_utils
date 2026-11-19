@@ -1,14 +1,15 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+pub mod base;
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use crate::base::{Vector2, Vector2Int};
+
+    
 
     #[test]
     fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+        let x = Vector2Int::new(1, 1);
+        println!("{}", x);
+        println!("{:?}", x);
     }
 }
