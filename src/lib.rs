@@ -1,15 +1,15 @@
 pub mod base;
+pub mod file;
 
 #[cfg(test)]
 mod tests {
-    use crate::base::{Vector2, Vector2Int};
-
-    
+    use crate::base::{Color};
 
     #[test]
     fn it_works() {
-        let x = Vector2Int::new(1, 1);
-        println!("{}", x);
-        println!("{:?}", x);
+        let c = Color::from_hex("FFDAFF");
+        println!("{}", c.to_hex());
+        println!("{}", c);
+        println!("{:?}", c.to_tuple());
     }
 }
