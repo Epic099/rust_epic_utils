@@ -3,13 +3,11 @@ pub mod file;
 
 #[cfg(test)]
 mod tests {
-    use crate::base::{Color};
+    use crate::file::File;
 
     #[test]
     fn it_works() {
-        let c = Color::from_hex("FFDAFF");
-        println!("{}", c.to_hex());
-        println!("{}", c);
-        println!("{:?}", c.to_tuple());
+        let f = File::new("Cargo.toml", false);
+        println!("{}",f.read())
     }
 }
