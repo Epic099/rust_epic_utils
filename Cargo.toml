@@ -2,6 +2,12 @@
 name = "epic_utils"
 version = "0.1.0"
 edition = "2024"
+description = "A simple package that I am creating overtime. It includes tools for Vectors, mathematics, etc."
+license = "MIT"
+repository = "https://github.com/Epic099/rust_epic_utils"
+readme = "readme.md"
+keywords = ["vector", "color", "game"]
+categories = ["game-development"]
 
 [dependencies]
 serde_json="1.0.154"
