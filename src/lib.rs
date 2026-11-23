@@ -1,5 +1,6 @@
 pub mod base;
 pub mod file;
+pub mod err;
 
 #[cfg(test)]
 mod tests {
@@ -7,7 +8,7 @@ mod tests {
 
     #[test]
     fn it_works() {
-        let f = File::new("Cargo.toml", false);
-        println!("{}",f.read())
+        let f = File::new("Cargo.toml", false).unwrap();
+        println!("{}",f.read().unwrap());
     }
 }
